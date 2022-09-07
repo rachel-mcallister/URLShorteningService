@@ -58,6 +58,7 @@ def home():
             connection.commit()
             return render_template("shorturl.html", short_url_to_display=new_short_url)
 
+
 # shorturl.html page executes this app.route
 # if the short exists gets the long from it and redirects to that long URL **
 @app.route('/<short_url>')
@@ -69,6 +70,7 @@ def redirecting(short_url):
         return redirect(data[0][0])
     else:
         return returnResponse('URL does not exist', 400)
+
 
 # returns all URL that have been shortened by accessing the DB
 @app.route("/getAllUrls")
@@ -85,7 +87,6 @@ def returnResponse(string, status_code):
     response.headers["Content-Type"] = "application/json"
     response.headers["Access-Control-Allow-Origin"] = "*"
     return response
-
 
 
 if __name__ == '__main__':
