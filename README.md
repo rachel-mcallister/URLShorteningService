@@ -5,9 +5,13 @@
 4. enter a url to be shortened and press shorten URL button
 5. You can also press the Get All URLs button to view all existing shortened URLs
 
-CASES **
+## CASES 
 Get long url that user has entered and check if it already exists in the database
 1. if it does return Short URL  of it
 2. if it does not need to create a new code (eight random letters) to become the Short URL for it
 
 Use the Short URL in either case to redirect to the Long Url which that short corresponds to
+
+## Tests 
+Functional tests present in testapp_functional_tests.py file which contains all fucntional tests
+test.py file is used to test the generate random string method used for generating the Short URLs
