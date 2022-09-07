@@ -6,7 +6,7 @@
 5. You can also press the Get All URLs button to view all existing shortened URLs
 
 ## CASES 
-Get long url that user has entered and check if it already exists in the database
+Get long URL that user has entered and check if it already exists in the database
 1. If it does return the Short URL of it
 2. If it does not need to create a new code (eight random letters) to become the Short URL for it
 
