@@ -5,6 +5,10 @@
 4. Enter a URL to be shortened and press shorten URL button
 5. You can also press the Get All URLs button to view all existing shortened URLs
 
+## Can also run via docker within the route directory where the Dockerfile is
+```docker build -t URLShorteningService .```
+```docker run -p 5000:5000 URLShorteningService```
+
 ## CASES 
 Get long URL that user has entered and check if it already exists in the database
 1. If it does return the Short URL of it
