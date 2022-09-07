@@ -1,6 +1,4 @@
-FROM ubuntu:18.04
-
-RUN apt-get update -y && apt-get install -y python3-pip python3
+FROM python:3
 
 COPY requirements.txt /app/requirements.txt
 WORKDIR /app
@@ -10,5 +8,4 @@ COPY ./ /app
 
 EXPOSE 5000
 
-ENTRYPOINT ["python3"]
-CMD ["app.py"]
+CMD ["python", "app.py"]
