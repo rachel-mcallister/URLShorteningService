@@ -1,4 +1,4 @@
-## how to run url shortening service
+## How to run url shortening service
 1. Set up virtual environment (```windows- py -m venv env``` && ```.\env\Scripts\activate``` to activate)
 2. ```pip install -r requirements.txt``` present in the root dir
 3. ```python app.py```
