@@ -1,0 +1,26 @@
+<!-- most site looks the same the actual content only changes -->
+<!-- base is the basic set up of the web page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
+    <!-- ** title different for each page ** -->
+    <title>{% block title %}}{% endblock %}</title>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to the first Url Shortening Service</h1>
+</header>
+<div class="container">
+    <h2>Rachel's URL Shortener</h2>
+    <!-- break between paragraph elements -->
+    <hr>
+    <!-- different content for different pages ** -->
+    {% block content%}
+    {% endblock %}
+</div>
+
+</body>
+</html>

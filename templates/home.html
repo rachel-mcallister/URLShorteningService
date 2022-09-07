@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+<!-- used to print out the title using format in base page -->
+{% block title %}shorten URL{% endblock %}
+
+
+<!-- used to show the content for this page using format of base page -->
+{% block content %}
+<form action="#", method="post">
+    <label for="url">Enter a URL:</label>
+
+   <!-- making type url to make sure user enters url ** -->
+    <input type="url" name="url" id="url"
+           placeholder="https://example.com"
+           pattern="https://.*" size="50"
+           required>
+    <br>
+    <br>
+    <input type="submit" value="Shorten URL" name="submit" , class="button">
+    <input type="button" value="Get All URLs" onclick="window.location.href='http://127.0.0.1:5000/getAllUrls'">
+</form>
+{% endblock %}

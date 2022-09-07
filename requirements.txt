@@ -1,0 +1,5 @@
+flask
+uvicorn
+pyclean
+requests
+pytest
