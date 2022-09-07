@@ -10,7 +10,7 @@ Get long URL that user has entered and check if it already exists in the databas
 1. If it does return the Short URL of it
 2. If it does not need to create a new code (eight random letters) to become the Short URL for it
 
-Use the Short URL in either case to redirect to the Long Url which that short corresponds to
+Use the Short URL in either case to redirect to the Long URL which that short corresponds to
 
 ## Tests 
 Functional tests present in testapp_functional_tests.py file which contains all fucntional tests
