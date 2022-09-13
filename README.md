@@ -6,8 +6,8 @@
 5. You can also press the Get All URLs button to view all existing shortened URLs
 
 ## Can also run via docker within the route directory where the Dockerfile is
-1. ```docker build -t URLShorteningService .```
-2. ```docker run -p 5000:5000 URLShorteningService```
+1. ```docker build -t urlshorteningservice .```
+2. ```docker run -p 5000:5000 urlshorteningservice```
 
 ## CASES 
 Get long URL that user has entered and check if it already exists in the database
